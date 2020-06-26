@@ -1,0 +1,400 @@
+{
+	"id": "3ace8b6a-3cc8-41ab-8b64-9ef53b5302f6",
+	"name": "TaskManager",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [],
+	"folders_order": [
+		"0d91c842-c8e9-48c1-9a55-40f6ca7f828e",
+		"4d7abff9-466f-4f7a-a193-14e7d36c65b2",
+		"99d91f2b-e2a2-494e-9331-2508cb95e7e4"
+	],
+	"folders": [
+		{
+			"id": "99d91f2b-e2a2-494e-9331-2508cb95e7e4",
+			"name": "Authenticator",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "3ace8b6a-3cc8-41ab-8b64-9ef53b5302f6",
+			"folder": null,
+			"order": [
+				"cfa020d1-ea18-454b-98c4-2dbdd5cf8689"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "4d7abff9-466f-4f7a-a193-14e7d36c65b2",
+			"name": "Task",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "3ace8b6a-3cc8-41ab-8b64-9ef53b5302f6",
+			"folder": null,
+			"order": [
+				"83196b5b-fc1f-4c8b-b718-2ebfd10fb9e7",
+				"136b0aab-eddb-45ac-a3a7-01ba4e7ed503",
+				"00fc3314-af37-4842-bc37-bb61bc4644ac",
+				"2eedc7bc-3648-421d-925f-c35f9b0af2f1",
+				"8ee8c233-b3b6-425f-a83e-295962899981",
+				"f7aabb0c-0130-4b2d-abe3-4f5e55ec237a"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "0d91c842-c8e9-48c1-9a55-40f6ca7f828e",
+			"name": "User",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "3ace8b6a-3cc8-41ab-8b64-9ef53b5302f6",
+			"folder": null,
+			"order": [
+				"f08b475d-6764-4795-b525-4f1d58fdc3be",
+				"76d9c6ff-25f9-447e-aff2-75d5bafd5fe2",
+				"a1bb17d8-595f-4337-801a-40009b3a1229",
+				"ac502b51-bbb9-4569-bb5d-1ffb53ddea7c",
+				"8be46cd8-1212-4162-8dc4-28fd708cf92b"
+			],
+			"folders_order": []
+		}
+	],
+	"requests": [
+		{
+			"id": "00fc3314-af37-4842-bc37-bb61bc4644ac",
+			"name": "GetByUserId",
+			"url": "https://localhost:44392/api/task/?userid=3",
+			"description": "This request shows how to get a task by an user id.",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkMjhkZDkyNy1iOTE4LTQxZjctYWEyNS0wNDgxNmQxOGI5OWIiLCJpYXQiOiIyNS8wNi8yMDIwIDIzOjE0OjU2IiwibmJmIjoxNTkzMTI2ODk2LCJleHAiOjE1OTMxMjg2OTZ9.IL-sju8oPHSKLH6lBgwi2RiNROhxrRe_cO56uYDsOIE",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "userid",
+					"value": "3",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": [],
+			"folder": "4d7abff9-466f-4f7a-a193-14e7d36c65b2",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkMjhkZDkyNy1iOTE4LTQxZjctYWEyNS0wNDgxNmQxOGI5OWIiLCJpYXQiOiIyNS8wNi8yMDIwIDIzOjE0OjU2IiwibmJmIjoxNTkzMTI2ODk2LCJleHAiOjE1OTMxMjg2OTZ9.IL-sju8oPHSKLH6lBgwi2RiNROhxrRe_cO56uYDsOIE\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "136b0aab-eddb-45ac-a3a7-01ba4e7ed503",
+			"name": "GetById",
+			"url": "https://localhost:44392/api/task/5",
+			"description": "This request shows how to get a task by id.",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer ",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "4d7abff9-466f-4f7a-a193-14e7d36c65b2",
+			"headers": "Authorization: Bearer \n",
+			"pathVariables": {}
+		},
+		{
+			"id": "2eedc7bc-3648-421d-925f-c35f9b0af2f1",
+			"name": "Post",
+			"url": "https://localhost:44392/api/task",
+			"description": "This request shows how to include a task.",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiMGNmZDIwOC1jMTgzLTQyYmEtYWUwMi0wNTZhZmYyOTMyOTUiLCJpYXQiOiIyNi8wNi8yMDIwIDA0OjEwOjEzIiwibmJmIjoxNTkzMTQ0NjEzLCJleHAiOjE1OTMxNDY0MTN9.Cxr_6bS0H8K2EbhOFs9Pfi1kR8pFOclta8kgyIffHFg",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "4d7abff9-466f-4f7a-a193-14e7d36c65b2",
+			"rawModeData": "{\n\t\"concluded\":true,\n\t\"description\":\"api eventos 105\",\n\t\"userid\": 5\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiMGNmZDIwOC1jMTgzLTQyYmEtYWUwMi0wNTZhZmYyOTMyOTUiLCJpYXQiOiIyNi8wNi8yMDIwIDA0OjEwOjEzIiwibmJmIjoxNTkzMTQ0NjEzLCJleHAiOjE1OTMxNDY0MTN9.Cxr_6bS0H8K2EbhOFs9Pfi1kR8pFOclta8kgyIffHFg\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "76d9c6ff-25f9-447e-aff2-75d5bafd5fe2",
+			"name": "GetById",
+			"url": "https://localhost:44392/api/user/15",
+			"description": "This request shows how to get an user by id.",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer ",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "0d91c842-c8e9-48c1-9a55-40f6ca7f828e",
+			"headers": "Authorization: Bearer \n",
+			"pathVariables": {}
+		},
+		{
+			"id": "83196b5b-fc1f-4c8b-b718-2ebfd10fb9e7",
+			"name": "Get",
+			"url": "https://localhost:44392/api/task",
+			"description": "This request shows how to get all tasks.",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiMGNmZDIwOC1jMTgzLTQyYmEtYWUwMi0wNTZhZmYyOTMyOTUiLCJpYXQiOiIyNi8wNi8yMDIwIDA0OjEwOjEzIiwibmJmIjoxNTkzMTQ0NjEzLCJleHAiOjE1OTMxNDY0MTN9.Cxr_6bS0H8K2EbhOFs9Pfi1kR8pFOclta8kgyIffHFg",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "4d7abff9-466f-4f7a-a193-14e7d36c65b2",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiMGNmZDIwOC1jMTgzLTQyYmEtYWUwMi0wNTZhZmYyOTMyOTUiLCJpYXQiOiIyNi8wNi8yMDIwIDA0OjEwOjEzIiwibmJmIjoxNTkzMTQ0NjEzLCJleHAiOjE1OTMxNDY0MTN9.Cxr_6bS0H8K2EbhOFs9Pfi1kR8pFOclta8kgyIffHFg\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8be46cd8-1212-4162-8dc4-28fd708cf92b",
+			"name": "Put",
+			"url": "https://localhost:44392/api/user",
+			"description": "This request shows how to update an user.",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxZTAxYTQzYS1mZmFiLTQwZTgtYjk1ZS1hYzgwOTExNGFlOTAiLCJpYXQiOiIyNS8wNi8yMDIwIDAyOjU1OjQxIiwibmJmIjoxNTkzMDUzNzQxLCJleHAiOjE1OTMwNTU1NDF9.aFiMBKOrLxwADU3VLnlZR-mrbL_MYG_lHmjBpJkd5Ro",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "0d91c842-c8e9-48c1-9a55-40f6ca7f828e",
+			"rawModeData": "{\n\t\"id\": 17,\n\t\"name\":\"Marcia dos Santos\",\n\t\"email\":\"marcia_alteracao@hotmail.com\",\n\t\"login\":\"marcia_santos\",\n\t\"password\":\"marcia123\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxZTAxYTQzYS1mZmFiLTQwZTgtYjk1ZS1hYzgwOTExNGFlOTAiLCJpYXQiOiIyNS8wNi8yMDIwIDAyOjU1OjQxIiwibmJmIjoxNTkzMDUzNzQxLCJleHAiOjE1OTMwNTU1NDF9.aFiMBKOrLxwADU3VLnlZR-mrbL_MYG_lHmjBpJkd5Ro\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8ee8c233-b3b6-425f-a83e-295962899981",
+			"name": "Put",
+			"url": "https://localhost:44392/api/task/1",
+			"description": "This request shows how to update a task.",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer ",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "4d7abff9-466f-4f7a-a193-14e7d36c65b2",
+			"rawModeData": "{\n\t\"id\":5,\n\t\"concluded\": false,\n\t\"description\":\"api eventos 55\",\n\t\"userid\": 5\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer \n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a1bb17d8-595f-4337-801a-40009b3a1229",
+			"name": "Post",
+			"url": "https://localhost:44392/api/user",
+			"description": "This request shows how to add an user.",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "0d91c842-c8e9-48c1-9a55-40f6ca7f828e",
+			"rawModeData": "{\n\t\"name\":\"Marcia dos Santos\",\n\t\"email\":\"marcia@hotmail.com\",\n\t\"login\":\"marcia_santos\",\n\t\"password\":\"marcia123\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "ac502b51-bbb9-4569-bb5d-1ffb53ddea7c",
+			"name": "Delete",
+			"url": "https://localhost:44392/api/user/1",
+			"description": "This request shows how to delete an user.",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer ",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "0d91c842-c8e9-48c1-9a55-40f6ca7f828e",
+			"headers": "Authorization: Bearer \n",
+			"pathVariables": {}
+		},
+		{
+			"id": "cfa020d1-ea18-454b-98c4-2dbdd5cf8689",
+			"name": "Auth",
+			"url": "https://localhost:44392/api/auth",
+			"description": "This request shows how to authenticate an user.",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "99d91f2b-e2a2-494e-9331-2508cb95e7e4",
+			"rawModeData": "{\n\t\"user\":\"clarice101\",\n\t\"password\":\"clarice00\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f08b475d-6764-4795-b525-4f1d58fdc3be",
+			"name": "Get",
+			"url": "https://localhost:44392/api/user",
+			"description": "This request shows how to get all users.",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3MTJkYWFlNS1kNjc1LTQ4OWItODU3OS1kODg3Mjc2YTE0NzIiLCJpYXQiOiIyNS8wNi8yMDIwIDAxOjQ5OjQ3IiwibmJmIjoxNTkzMDQ5Nzg3LCJleHAiOjE1OTMwNTE1ODd9.ex4r5ZU2OZzrzkkoKQ2WTOZoZw0WRXiMhALRPdyij5s",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "0d91c842-c8e9-48c1-9a55-40f6ca7f828e",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3MTJkYWFlNS1kNjc1LTQ4OWItODU3OS1kODg3Mjc2YTE0NzIiLCJpYXQiOiIyNS8wNi8yMDIwIDAxOjQ5OjQ3IiwibmJmIjoxNTkzMDQ5Nzg3LCJleHAiOjE1OTMwNTE1ODd9.ex4r5ZU2OZzrzkkoKQ2WTOZoZw0WRXiMhALRPdyij5s\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f7aabb0c-0130-4b2d-abe3-4f5e55ec237a",
+			"name": "Delete",
+			"url": "https://localhost:44392/api/task/1",
+			"description": "This request shows how to delete a task.",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer ",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "4d7abff9-466f-4f7a-a193-14e7d36c65b2",
+			"headers": "Authorization: Bearer \n",
+			"pathVariables": {}
+		}
+	]
+}
